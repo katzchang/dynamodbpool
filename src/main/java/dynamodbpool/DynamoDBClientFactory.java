@@ -28,17 +28,15 @@ public class DynamoDBClientFactory implements PoolableObjectFactory<AmazonDynamo
 
     @Override
     public boolean validateObject(AmazonDynamoDBClient amazonDynamoDBClient) {
-        return true;  //To change body of implemented methods use File | Settings | File Templates.
+        return true;  // TODO
     }
 
     @Override
     public void activateObject(AmazonDynamoDBClient amazonDynamoDBClient) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public void passivateObject(AmazonDynamoDBClient amazonDynamoDBClient) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 }
 
