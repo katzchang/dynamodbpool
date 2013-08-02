@@ -1,13 +1,8 @@
-Hello Scala Servlet
+dynamodbpool
 ====================================
-
-This is a template for servlet 3.0 with scala 2.9.1
 
 ## to run
 
-see Makefile
-
-## notice
-
-* 事前にmvnのインストールが必要
- * toolsに置こうとしたが、なぜかjetty:runが通らないので
+1. cp test/resources/AwsCredientials.properties.sample test/resources/AwsCredientials.properties
+2. edit test/resources/AwsCredientials.properties as your own keys
+3. run test/java/sample/AmazonDynamoDBSample
