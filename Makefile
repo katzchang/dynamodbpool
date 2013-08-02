@@ -1,14 +1,14 @@
 
-all: test
+all: sample
 
-test:
-	./sbt test
+sample:
+	./sbt sample
 
-test-continuous:
-	./sbt ~test
+sample-continuous:
+	./sbt ~sample
 
 jetty-run:
-	@echo to test: curl '"http://localhost:8080/hello?hoge=fuga&hoge=piyo&foo=bar"'
+	@echo to sample: curl '"http://localhost:8080/hello?hoge=fuga&hoge=piyo&foo=bar"'
 	mvn jetty:run
 
 package:
